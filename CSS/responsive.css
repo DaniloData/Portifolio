@@ -1,0 +1,123 @@
+
+@media (max-width: 1200px) {
+
+main {
+    width: 100%;
+        
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+}
+
+    .main-content {
+        width: 100%;
+        align-items: center;
+
+        margin-bottom: 15%;
+    }
+
+    .main-content .text p, 
+    .main-content .welcome p {
+        width: 100%;
+        font-size: 0.9em;
+    }
+
+    .techs .cards-container, .main-content .text p, .main-content .welcome p {
+        margin-top: 32px;
+    }
+
+    .content-left, .content-right {
+        text-align: center;
+        width: 100%;
+        flex: none;
+    }
+}
+
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    
+        text-align: center  ;
+    }
+    
+    header h1 {
+        font-size: 2em; 
+    }
+
+    header nav {
+        margin-top: 24px;
+    }
+    
+    header nav a {
+        font-size: 1em;
+    }
+
+    .techs .cards-container .card {
+        width: 60px;
+        height: 60px;
+    }
+
+
+    main .main-content .text h2, .main-content .tech h2, .welcome h2 {
+        font-size: 1.8em;
+    }
+
+    .main-content .tech h2 {
+        margin-bottom: 72px !important;
+    }
+
+    main figure img {
+        margin-bottom: 32px;
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@media (max-width: 350px) {
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    
+        text-align: center  ;
+    }
+    
+    header h1 {
+        font-size: 1.2em;
+    }
+
+      header nav {
+        margin-top: 12px;
+    }
+
+    header nav a {
+        font-size: 0.5em;
+    }
+
+    .techs .cards-container .card {
+        width: 60px;
+        height: 60px;
+    }
+
+
+    main .main-content .text h2, .main-content .tech h2, .welcome h2 {
+        font-size: 1.8em;
+    }
+
+    .main-content .tech h2 {
+        margin-bottom: 72px !important;
+    }
+
+    main figure img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .main-content .text p, 
+    .main-content .welcome p {
+        font-size: 0.8em;
+    }
+}
