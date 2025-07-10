@@ -81,13 +81,18 @@ main {
     }
 
     .main-content .tech h2 {
-        margin-bottom: 72px !important;
+        /* Reduz a distância entre o título "Tecnologias" e as imagens abaixo em telas pequenas */
+        margin-bottom: 24px !important;
     }
 
     main figure img {
         margin-bottom: 32px;
-        width: 250px;
-        height: 250px;
+        width: 180px;
+        height: 180px;
+        border-radius: 50%; /* Torna a imagem de Danilo circular em telas pequenas */
+        object-fit: cover;
+        display: block;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.10);
     }
 }
 
@@ -124,18 +129,21 @@ main {
     }
 
     .main-content .tech h2 {
-        margin-bottom: 72px !important;
+        /* Reduz ainda mais a distância entre o título e as imagens em telas muito pequenas */
+        margin-bottom: 16px !important;
     }
 
     main figure img {
-        width: 100px;
-        height: 100px;
-        min-width: 80px;
-        min-height: 80px;
-        max-width: 150px;
-        max-height: 150px;
+        width: 80px;
+        height: 80px;
+        min-width: 60px;
+        min-height: 60px;
+        max-width: 100px;
+        max-height: 100px;
+        border-radius: 50%; /* Mantém a imagem circular em telas muito pequenas */
         object-fit: cover;
         display: block;
+        box-shadow: 0 1px 4px rgba(0,0,0,0.10);
     }
 
     .main-content .text p, 
