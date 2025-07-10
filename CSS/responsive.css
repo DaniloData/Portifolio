@@ -119,22 +119,23 @@ main {
     }
 
     .techs .cards-container .card {
-        width: 36px;
-        height: 36px;
-        min-width: 32px;
-        min-height: 32px;
-        max-width: 40px;
-        max-height: 40px;
+        width: 24px;
+        height: 24px;
+        min-width: 20px;
+        min-height: 20px;
+        max-width: 32px;
+        max-height: 32px;
         overflow: hidden;
         display: flex;
         align-items: center;
         justify-content: center;
     }
     .techs .cards-container .card img {
-        width: 70%;
+        width: 80%;
         height: auto;
         object-fit: contain;
         display: block;
+        aspect-ratio: 1/1;
     }
 
 
@@ -147,17 +148,25 @@ main {
         margin-bottom: 10px !important;
     }
 
+    main figure {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
     main figure img {
-        width: 56px;
-        height: 56px;
-        min-width: 40px;
-        min-height: 40px;
-        max-width: 64px;
-        max-height: 64px;
-        border-radius: 50%; /* Mantém a imagem circular em telas muito pequenas */
+        width: 32px;
+        height: 32px;
+        min-width: 24px;
+        min-height: 24px;
+        max-width: 40px;
+        max-height: 40px;
+        aspect-ratio: 1/1;
+        border-radius: 50%; /* Garante formato perfeitamente circular */
         object-fit: cover;
         display: block;
         box-shadow: 0 1px 4px rgba(0,0,0,0.10);
+        margin: 0 auto;
     }
 
     .main-content .text p, 
