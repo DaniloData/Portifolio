@@ -25,83 +25,18 @@
     header nav {
         display: flex;
         gap: 16px;
-        margin-top: 0;
+        margin-top: 4;
     }
 
     header nav a {
         color: #00eaff;
-        font-size: 1.2em;
+        font-size: 1.5em;
         transition: color 0.2s;
     }
 
     header nav a:hover {
         color: #fff;
     }
-}
-
-@media (max-width: 768px) {
-    header {
-        font-size: 0.95em;
-        padding: 10px 12px 6px 12px;
-        height: 56px;
-    }
-
-    header h1 {
-        font-size: 1.5em;
-    }
-
-    header nav {
-        gap: 12px;
-    }
-
-    header nav a {
-        font-size: 1em;
-    }
-}
-
-@media (max-width: 450px) {
-    header {
-        font-size: 0.85em;
-        padding: 8px 4px 4px 4px;
-        height: 48px;
-    }
-
-    header h1 {
-        font-size: 1.1em;
-    }
-
-    header nav {
-        gap: 8px;
-    }
-
-    header nav a {
-        font-size: 0.9em;
-    }
-}
-
-footer {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #222;
-    padding: 16px 0 8px 0;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    z-index: 10;
-}
-
-footer span {
-    color: #fff;
-    font-size: 0.85em;
-    text-align: center;
-    width: 100vw;
-    display: block;
-    line-height: 1.4;
-}
-
-@media (max-width: 1024px) {
 
     main {
         width: 100%;
@@ -184,14 +119,21 @@ footer span {
         justify-content: center;
 
         text-align: center;
+
+        font-size: 0.95em;
+        padding: 10px 12px 6px 12px;
+        height: 64px;
     }
 
     header h1 {
-        font-size: 2em;
+        font-size: 1.7em;
+        margin-bottom: 2px;
     }
 
     header nav {
-        margin-top: 24px;
+        display: flex;
+        gap: 4px;
+        margin-top: 2px;
     }
 
     header nav a {
@@ -251,18 +193,54 @@ footer span {
         justify-content: center;
 
         text-align: center;
+
+        font-size: 0.85em;
+        padding: 8px 4px 4px 4px;
+        height: 56px;
     }
 
     header h1 {
-        font-size: 1.2em;
+        font-size: 1.5em;
+        margin-bottom: 2px;
+
     }
 
     header nav {
-        margin-top: 12px;
+        display: flex;
+        gap: 16px;
+        margin-top: 2px;
     }
 
     header nav a {
-        font-size: 0.5em;
+        color: #00eaff;
+        font-size: 0.9em;
+        transition: color 0.2s;
+    }
+
+    header nav a:hover {
+        color: #fff;
+    }
+
+    footer {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #222;
+        padding: 16px 0 8px 0;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        z-index: 10;
+    }
+
+    footer span {
+        color: #fff;
+        font-size: 0.85em;
+        text-align: center;
+        width: 100vw;
+        display: block;
+        line-height: 1.4;
     }
 
     .techs .cards-container .card {
