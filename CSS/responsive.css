@@ -303,4 +303,106 @@
     .main-content .welcome p {
         font-size: 0.8em;
     }
+
+}
+
+/* ==============================================
+   Adaptações responsivas para .projeto-destaque
+   ============================================== */
+
+/* ------------------ Até 1024px ------------------ */
+@media (max-width: 1024px) {
+
+    /* container herda 100% da largura e remove margens laterais */
+    main .projeto-destaque {
+        width: 100%;
+        margin: 0;
+        padding: 32px 0;
+    }
+
+    /* título centralizado e menor */
+    main .projeto-destaque h2 {
+        font-size: 2em;
+        text-align: center;
+        margin-bottom: 1em;
+    }
+
+    /* imagens em duas colunas flexíveis */
+    main .projeto-destaque .imagens-projeto {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    /* cada imagem ocupa até 45% do container */
+    main .projeto-destaque .imagens-projeto img {
+        flex: 1 1 45%;
+        max-width: 45%;
+        margin: 0 auto;
+    }
+
+    /* parágrafos usam 90% da largura, texto justificado */
+    main .projeto-destaque .descricao-projeto p {
+        width: 90%;
+        margin: 0 auto 1em;
+        text-indent: 1.2em;
+    }
+}
+
+/* ------------------ Até 768px ------------------ */
+@media (max-width: 768px) {
+
+    main .projeto-destaque {
+        width: 100%;
+        padding: 24px 0;
+    }
+
+    main .projeto-destaque h2 {
+        font-size: 1.8em;
+    }
+
+    /* empilha imagens em coluna */
+    main .projeto-destaque .imagens-projeto {
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+    }
+
+    /* imagens mais largas, porém limitadas a 90% */
+    main .projeto-destaque .imagens-projeto img {
+        width: 90%;
+        max-width: 500px;
+    }
+
+    main .projeto-destaque .descricao-projeto p {
+        width: 100%;
+        font-size: 1em;
+        text-indent: 1.6em;
+        margin: 0 0 1em;
+    }
+}
+
+/* ------------------ Até 450px ------------------ */
+@media (max-width: 450px) {
+
+    main .projeto-destaque {
+        padding: 16px 0;
+    }
+
+    main .projeto-destaque h2 {
+        font-size: 1.6em;
+    }
+
+    /* imagens ocupam toda a largura disponível */
+    main .projeto-destaque .imagens-projeto img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    /* texto menor e recuo reduzido */
+    main .projeto-destaque .descricao-projeto p {
+        font-size: 0.8em;
+        text-indent: 0.8em;
+        margin-bottom: 0.75em;
+    }
 }

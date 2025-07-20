@@ -186,3 +186,38 @@ main .tech .cards-container .card img {
 main .tech .cards-container .card:hover {
   box-shadow: 0 4px 8px #00e0ff;
 }
+
+
+
+/* Container do projeto alinhado ao padrão do site */
+main .projeto-destaque {
+  width: 75%;
+  margin-left: 2%;
+  margin-right: auto;
+  padding: 40px 0;
+}
+
+/* Estilo do título com link */
+main .projeto-destaque h2 a {
+  color: #5aba8d;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+main .projeto-destaque h2 a:hover {
+  color: #00e0ff;
+}
+
+/* Parágrafos ajustados conforme padrão de texto */
+main .projeto-destaque .descricao-projeto p {
+  width: 75%;
+  font-size: 1.2em;
+  font-weight: 300;
+  margin-left: 2%;
+  margin-right: auto;
+  text-align: justify;
+  text-indent: 2em;
+  line-height: 1.6;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
